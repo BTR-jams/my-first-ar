@@ -73,4 +73,17 @@
         <a-camera gps-camera rotation-reader></a-camera>
     </a-scene>
 
-    <scrip
+    <script>
+        // Hide instructions after 5 seconds
+        setTimeout(() => {
+            document.getElementById('info').style.display = 'none';
+        }, 5000);
+        
+        // Log when AR starts
+        document.querySelector('a-scene').addEventListener('loaded', function () {
+            console.log('AR Scene Loaded!');
+        });
+    </script>
+</body>
+</html>
+```
