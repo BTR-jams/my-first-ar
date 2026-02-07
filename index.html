@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First AR</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.5/aframe/build/aframe-ar.js"></script>
+    <style>
+        body { margin: 0; }
+    </style>
+</head>
+<body>
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+        
+        <!-- Your image will appear here -->
+        <a-image 
+            src="test-image.png" 
+            position="0 0 -3" 
+            width="2" 
+            height="2">
+        </a-image>
+
+        <a-camera gps-camera rotation-reader></a-camera>
+    </a-scene>
+</body>
+</html>
+```
+
+4. **Scroll down**
+5. **Click:** "Commit changes"
+
+**✅ That's it! You've created your first AR!**
+
+---
+
+## 🌐 STEP 3: Publish It
+
+### 3A: Turn on GitHub Pages
+
+1. **Click:** "Settings" tab (top of page)
+2. **Click:** "Pages" (left sidebar)
+3. **Under "Source":**
+   - Branch: Select **"main"**
+   - Folder: Keep **"/ (root)"**
+4. **Click:** "Save"
+5. **Wait 2 minutes**
+6. **Refresh the page**
+7. **You'll see:** "Your site is published at https://YOURNAME.github.io/my-first-ar/"
+
+**✅ Copy that URL!**
+
+---
+
+## 📱 STEP 4: Create QR Code
+
+1. **Go to:** `qr-code-generator.com`
+2. **Paste** your GitHub Pages URL
+3. **Click:** "Create QR Code"
+4. **Download** the image
+5. **Save as:** `my-ar-qrcode.png`
+
+---
+
+## 🎉 STEP 5: TEST IT!
+
+1. **Open your phone camera**
+2. **Scan the QR code** (from your computer screen is fine)
+3. **Tap** the notification
+4. **Allow camera access**
+5. **Point your phone around**
+
+**You should see your image floating in AR!** 🎊
+
+---
+
+## 🎓 What You Just Built:
+```
+Phone Camera → Scan QR → Opens Website → AR Activates → Image Appears!
